@@ -1,8 +1,11 @@
+html {
+  scroll-behavior: smooth;
+}
 body {
   background: black;
   margin: 0;
   padding: 0;
-  height: 4000px;
+  height: 5000px;
 }
 .homePage{
   background-color: transparent;

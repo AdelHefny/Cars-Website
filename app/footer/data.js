@@ -1,18 +1,22 @@
 export const data = [
     {
         Id:0,
-        title:"facebook",
+        title:"linkedIn",
+        link:"www.linkedin.com/in/adel-hefny-75b6601bb"
     },
     {
         Id:1,
-        title:"youtube",
+        title:"facebook",
+        link:"www.facebook.com/"
     },
     {
         Id:2,
-        title:"twitter",
+        title:"X",
+        link:"twitter.com/"
     },
     {
         Id:3,
-        title:"github",
+        title:"instagram",
+        link:"www.instagram.com/"
     }
 ]

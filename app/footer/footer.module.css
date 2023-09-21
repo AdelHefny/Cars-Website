@@ -1,5 +1,121 @@
 .footer{
-    height: 50vh;
+    height: 90vh;
+    background-color: white;
+    color: black;
+    z-index: 1100;
+}
+.autono{
+    text-decoration: none;
+    color: black;
+}
+.autono h3{
+    text-decoration: none;
+    letter-spacing: 6px;
+    font-size: 1.3rem;
+}
+.INFORMATION{
+    padding: 4rem 8rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 5rem;
+}
+.container{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+}
+.contactInfoContainer{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    gap: 5rem;
+    font-weight: 400;
+    letter-spacing: 2px;
+}
+.navigator{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    height: 10rem;
+}
+.navigator a{
+    text-decoration: none;
+    color: black;
+}
+.contactInfo{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    height: 10rem;
+}
+.contactInfo p{
+    padding-bottom: 3rem;
+    text-align: start;
+    margin: 0;
+}
+.Subscribe{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    letter-spacing: 2px;
+}
+.Subscribe h3{
+    font-weight: 400;
+    font-size: 1.2rem;
+}
+.SubContainer{
+    position: relative;
+    display: flex;
+    flex-direction: row;
+}
+.subInput{
+    font-size: 1rem;
+    width: 15rem;
+    border-radius: 10px;
+    border: black 1px solid;
+}
+.subInput:hover{
+    border: black 2px solid;
+    background-color: #e8e6e6;
+}
+.subInput:active{
+    border: black 2px solid;
+    background-color: #efa573;
+}
+.subBtn{
     background-color: black;
     color: white;
+    border: none;
+    border-radius: 10px;
+    padding: 0.7rem 1.5rem;
+    font-size: 1rem;
+    font-weight: 300;
+    position: relative;
+    right: 1rem;
+    cursor: pointer;
+    border: black 1px solid;
+    transition: ease-in-out 0.5s;
+}
+.subBtn:hover{
+    background-color: white;
+    color: black;
+}
+.credits{
+    background-color: white;
+    padding-top: 1rem;
+    padding-left: 8rem;
+    padding-right: 4rem;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+}
+.socialMedia{
+    display:flex;
+    flex-direction: row;
+    gap: 1.5rem;
+    align-items: center;
 }

@@ -1,3 +1,4 @@
+import Industry from "./components/Industry/Industry";
 import BlogDirector from "./components/blog Director/blogDirector";
 import Members from "./components/members/Members";
 import Service from "./components/services";
@@ -12,6 +13,7 @@ export default function Home() {
       <Service/>
       <BlogDirector/>
       <Members/>
+      <Industry/>
     </main>
   )
 }

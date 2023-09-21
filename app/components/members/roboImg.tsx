@@ -1,8 +1,8 @@
 "use client"
 import styles from "./Members.module.css"
 import Image from "next/image";
-import RoboHand from "@/public/images/Robot-Hand.jpg"
-import roboHandSm from "@/public/images/Robot-Hand-sm.jpg"
+import RoboHand from "@/public/images/RoboHand/Robot-Hand.jpg"
+import roboHandSm from "@/public/images/RoboHand/Robot-Hand-sm.jpg"
 
 function RoboImage() {
     return ( 
