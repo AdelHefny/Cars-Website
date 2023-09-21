@@ -1,0 +1,134 @@
+.blogDirector{
+    z-index: 1000;
+    background-image: url("https://static.wixstatic.com/media/ecf670_45192c5e009146848607c962e3408dd5~mv2.jpg/v1/crop/x_0,y_125,w_1360,h_555/fill/w_1360,h_700,al_c,q_85,usm_0.66_1.00_0.01,enc_auto/Car%20Factory_edited.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position-y:top;
+    background-attachment: fixed;
+    color: black;
+    height: 60rem;
+    width: 100%;
+}
+.blogDirectorPadding{
+    padding: 0 0 0 3rem;
+    display: flex;
+    align-items: center;
+}
+.whyAuto{
+    padding: 0 0 0 2rem;
+    width: 30rem;
+    height: 45rem;
+    margin-top: 10rem;
+    display: flex;
+    align-items: center;
+    background-color: black;
+    color: white;
+    border-radius: 20px;
+}
+.readMoreBtnBlog {
+    position: relative;
+    bottom: 4rem;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    width: 13rem;
+    padding: 2rem;
+}
+.readMoreBtnBlog svg{
+    --stroke-width: 0;
+    --fill-opacity: 1;
+    --stroke: #5E97FF;
+    --stroke-opacity: 1;
+    --fill: #FFFFFF;
+    -webkit-tap-highlight-color: rgba(0,0,0,0);
+    fill: var(--fill);
+    fill-opacity: var(--fill-opacity);
+    stroke: var(--stroke);
+    stroke-opacity: var(--stroke-opacity);
+    stroke-width: var(--stroke-width);
+}
+.readMoreBtnBlog a{
+    background-color: transparent;
+    color: white;
+    border: solid white 1px;
+    cursor: pointer;
+    text-decoration: none;
+    padding: 0.25rem 1rem;
+    border-radius:7px 0 0 7px;
+    transition: 0.5s;
+}
+.readMoreBtnBlog a:hover{
+    background-color: white;
+    color: black;
+}
+.readMoreBtnBlog div{
+    border: solid white 1px;
+    border-radius:0 7px 7px 0;
+    padding: 0.25rem 0.7rem;
+}
+.contentAuto{
+    display: flex;
+    flex-direction: column;
+    justify-content: start;
+    align-items: start;
+    margin-top: 3rem;
+    padding-right: 1rem;
+    width: 100%;
+    line-height: 2rem;
+}
+.contentAuto h3,.contentAuto h1,.contentAuto p{
+    margin: 0;
+    letter-spacing: 2px;
+}
+.contentAuto h3{
+    font-size: small;
+    font-weight: 400;
+    border-left: gray solid 2px;
+    padding: 0 0 4rem 4rem;
+    margin: 0;
+}
+.contentAuto h1{
+    font-weight: 400;
+    border-left: white solid 2px;
+    padding: 0 0 1rem 4rem;
+    line-height: 3rem;
+}
+.contentAuto p{
+    border-left: gray solid 2px;
+    font-size: 0.9rem;
+    padding: 3rem 3rem 5rem 4rem;
+}
+@media only screen and (max-width: 1024px) {
+
+}
+@media only screen and (max-width: 720px){
+    .blogDirector{
+        padding: 0;
+        
+        height: 70rem;
+        background-image: url("https://static.wixstatic.com/media/ecf670_45192c5e009146848607c962e3408dd5~mv2.jpg/v1/crop/x_0,y_125,w_1360,h_555/fill/w_400,h_800,al_c,q_85,usm_0.66_1.00_0.01,enc_auto/Car%20Factory_edited.jpg");
+        background-attachment:scroll;
+    }
+    .whyAuto{
+        width: 20rem;
+        height: 45rem;
+        font-size: small;
+    }
+    .blogDirectorPadding{
+        justify-content: center;
+        padding: 0;
+    }
+    .contentAuto h3{
+        padding: 0 0 2rem 2rem;
+    }
+    .contentAuto h1{
+        padding: 0 0 1rem 2rem;
+    }
+    .contentAuto p{
+        font-size: 0.9rem;
+        padding: 1.5rem 1.5rem 3rem 2rem;
+    }
+    .readMoreBtnBlog{
+        bottom: 3rem;
+    }
+}

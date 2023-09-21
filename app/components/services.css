@@ -1,0 +1,195 @@
+.services{
+    background-color: white;
+    position: relative;
+    top: 15vh;
+    height: 180rem;
+    display: flex;
+    flex-direction: column;
+}
+.autoHeadSer{
+    display: flex;
+    flex-direction: column;
+    gap: 5rem;
+}
+.headSer{
+    display: flex;
+    flex-direction: column;
+    align-items: start;
+    width: 70%;
+    height: 15vh;
+    padding: 6rem 6rem;
+}
+.headSer h6,.headSer h3{
+    margin: 0;
+    padding: 0 3rem;
+}
+.headSer h6{
+    padding-bottom: 3rem;
+    border-left: rgb(168, 168, 168) solid 2px;
+    font-weight: 300;
+    font-size: 0.9rem;
+    letter-spacing: 2px;
+}
+.headSer h3{
+    border-left: black solid 3px;
+    font-size:1.6rem;
+    font-weight: 300;
+    letter-spacing: 1px;
+    line-height: 3rem;
+}
+.auto{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    padding-left: 10rem;
+}
+.auto img{
+    height: 548px;
+    width: 545px;
+    z-index: 1000;
+}
+.autoDisc{
+    display: flex;
+    flex-direction: column;
+    align-items: start;
+}
+.autoDisc h1{
+    font-size: 2.5rem;
+    font-weight: 400;
+    letter-spacing: 3px;
+}
+.autoDisc p{
+    line-height: 1.8rem;
+    width: 70%;
+    letter-spacing: 2px;
+    font-size: 0.87rem;
+}
+.readMoreBtn {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+.readMoreBtn a{
+    background-color: transparent;
+    color: black;
+    border: solid black 1px;
+    cursor: pointer;
+    text-decoration: none;
+    padding: 0.5rem 1.5rem;
+    border-radius:7px 0 0 7px;
+    transition: 0.5s;
+}
+.readMoreBtn a:hover{
+    background-color: black;
+    color: white;
+}
+.readMoreBtn div{
+    border: solid black 1px;
+    border-radius:0 7px 7px 0;
+    padding: 0.5rem 0.5rem;
+}
+.readMoreBtn div img{
+    height: 35px;
+    width: 35px;
+}
+.RealTime{
+    background-color: white;
+    display: flex;
+    flex-direction: row;
+    gap: 9.5rem;
+    height: 50rem;
+    align-items: center;
+}
+.RealTime img{
+    z-index: 1000;
+}
+.perception{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-around;
+    padding-left: 10rem;
+    height: 50rem;
+}
+.perception h1{
+    letter-spacing: 4px;
+    font-weight: 300;
+    line-height: 4rem;
+}
+.perception img{
+    z-index: 1000;
+    height: 680px;
+    width: 549px;
+}
+@media only screen and (max-width: 1024px) {
+    .services{
+        align-items: center;
+    }
+    .auto img{
+        height: 580px;
+        width: 420px;
+    }
+}
+@media only screen and (max-width: 720px) {
+    .services{
+        height: 210rem;
+        width: 100%;
+        gap: 0rem;
+    }
+    .auto{
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        padding-left: 0rem;
+    }
+    .auto img{
+        height: 400px;
+        width: 380px;
+    }
+    .headSer{
+        padding: 3rem 3rem;
+    }
+    .headSer h6{
+        padding-bottom: 1.5rem;
+        font-size: 0.7rem;
+    }
+    .headSer h3{
+        font-size:1.4rem;
+        line-height: 1.5rem;
+    }
+    .autoDisc{
+        align-items: center;
+    }
+    .RealTime{
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        gap: 3rem;
+    }
+    .RealTime img{
+        height: 400px;
+        width: 380px;
+    }
+    .perception{
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        height: 80rem;
+        padding-left: 0;
+    }
+    .perception img{
+        height: 400px;
+        width: 380px;
+    }
+}
+@media only screen and (max-width: 380px){
+    .perception img{
+        height: 400px;
+        width: 350px;
+    }
+    .auto img{
+        height: 400px;
+        width: 320px;
+    }
+}
