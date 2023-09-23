@@ -3,6 +3,8 @@
     height: 120vh;
     z-index: 1000;
     color: black;
+    display: flex;
+
 }
 .membersContainer img{
     z-index: 1200;
@@ -100,11 +102,15 @@
     }
     .membersContainer img{
         height: 300px;
+        width: 381px;
     }
     .title{
         margin-bottom: 4rem;
         font-weight: 300;
         letter-spacing: 2px;
         font-size: 1.5rem;
+    }
+    .count{
+        width: 8rem;
     }
 }

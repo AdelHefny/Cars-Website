@@ -117,6 +117,7 @@
     .blogDirectorPadding{
         justify-content: center;
         padding: 0;
+        width: 91vw;
     }
     .contentAuto h3{
         padding: 0 0 2rem 2rem;
@@ -130,5 +131,8 @@
     }
     .readMoreBtnBlog{
         bottom: 3rem;
+    }
+    .contentAuto{
+        padding-right: 0rem;
     }
 }
