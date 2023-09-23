@@ -3,8 +3,6 @@ import Link from "next/link";
 import "./header.css";
 import { MutableRefObject, useEffect, useRef } from "react";
 
-
-
 function Nav() {
     const nav = useRef() as MutableRefObject<HTMLDivElement>;
     const hamburger = useRef() as MutableRefObject<HTMLButtonElement>;

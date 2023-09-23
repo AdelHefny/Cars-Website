@@ -1,5 +1,5 @@
 .footer{
-    height: 90vh;
+    min-height: fit-content;
     background-color: white;
     color: black;
     z-index: 1100;

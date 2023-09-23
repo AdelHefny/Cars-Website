@@ -1,5 +1,6 @@
 import Industry from "./components/Industry/Industry";
 import BlogDirector from "./components/blog Director/blogDirector";
+import Careers from "./components/careers/Careers";
 import Members from "./components/members/Members";
 import Service from "./components/services";
 import Slogan from "./components/slogan";
@@ -14,6 +15,7 @@ export default function Home() {
       <BlogDirector/>
       <Members/>
       <Industry/>
+      <Careers/>
     </main>
   )
 }
