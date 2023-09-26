@@ -3,14 +3,21 @@ import styles from "./Members.module.css"
 import Image from "next/image";
 import RoboHand from "@/public/images/RoboHand/Robot-Hand.jpg"
 import roboHandSm from "@/public/images/RoboHand/Robot-Hand-sm.jpg"
+import {useState,useEffect} from "react"
 
 function RoboImage() {
+    const [windowWidth,setWindowWidth] = useState(window.innerWidth);
+    useEffect(()=>{
+        window.addEventListener("resize",()=>{
+            setWindowWidth(window.innerWidth);
+        });
+    })
     return ( 
         <div className={styles.imgContainer}>
             <Image
-            width={window.outerWidth < 720?400:675}
-            height={window.outerWidth < 720?313:760}
-            src={window.outerWidth < 720?roboHandSm:RoboHand}
+            width={windowWidth < 720?400:675}
+            height={windowWidth < 720?313:760}
+            src={windowWidth< 720?roboHandSm:RoboHand}
             alt="robot hand" />
         </div>
      );

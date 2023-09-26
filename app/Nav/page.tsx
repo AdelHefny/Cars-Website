@@ -1,15 +1,21 @@
 "use client"
 import Link from "next/link";
 import "./header.css";
-import { MutableRefObject, useEffect, useRef } from "react";
+import { MutableRefObject, useEffect, useState,useRef } from "react";
 
 function Nav() {
+    const [windowWidth,setWindowWidth] = useState(window.innerWidth);
+    useEffect(()=>{
+        window.addEventListener("resize",()=>{
+            setWindowWidth(window.innerWidth);
+        });
+    })
     const nav = useRef() as MutableRefObject<HTMLDivElement>;
     const hamburger = useRef() as MutableRefObject<HTMLButtonElement>;
     let lastMove = window.scrollY;
     let change = 0;
     function onScroll(){
-        if(window.innerWidth < 720){}
+        if(windowWidth < 720){}
         else if(window.scrollY > 0){
             nav.current.style.backgroundColor = "white";
         }else{

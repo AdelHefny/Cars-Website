@@ -1,0 +1,70 @@
+.Mission{
+    height: 140vh;
+    background-color: white;
+    color: black;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+    border-bottom: solid black 1px;
+}
+.missionDescreption{
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    width: 30%;
+}
+.missionDescreption h5{
+    font-size: 1rem;
+    font-weight: 300;
+    padding-left: 3rem;
+    padding-bottom: 3rem;
+    margin: 0;
+    border-left: rgb(167, 167, 167) solid 2px;
+}
+.missionDescreption h1{
+    border-left: 3px solid black;
+    margin: 0;
+    padding-left: 3rem;
+    letter-spacing: 2px;
+    line-height: 3rem;
+    font-size: 1.6rem;
+    font-weight: 300;
+}
+.missionDescreption div{
+    padding-top: 1rem;
+    border-left: rgb(167, 167, 167) solid 2px;
+}
+.missionDescreption div p{
+    font-size: 1rem;
+    font-weight: 300;
+    padding-left: 3rem;
+    padding-top: 3rem;
+    margin: 0;
+    line-height: 1.8rem;
+}
+@media only screen and (max-width: 1024px) {
+
+}
+@media only screen and (max-width: 720px) {
+    .Mission{
+        flex-direction: column;
+        align-items: center;
+        height: 160vh;
+    }
+    .missionDescreption{
+        width: 90%;
+    }
+    .Mission img{
+        width: 70%;
+        height: 68%;
+    }
+    .imgContainer{
+        display: flex;
+        flex-direction: column;
+        align-items: center;    
+        width: 100%;
+        height: 44%;
+        justify-content: center;
+    }
+}
