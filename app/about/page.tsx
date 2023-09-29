@@ -1,6 +1,6 @@
 import styles from "./About.module.css";
-import Mission from "./components/mission/Mission";
-import Journey from "./components/Journey/Journey";
+import Mission from "../components/componentsAbout/mission/Mission";
+import Journey from "../components/componentsAbout/Journey/Journey";
 import newsPlatform from "./data";
 import Image from "next/image";
 function About() {
