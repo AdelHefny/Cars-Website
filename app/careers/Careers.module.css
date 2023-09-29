@@ -1,0 +1,288 @@
+.Careers {
+  display: flex;
+  flex-direction: column;
+}
+.head {
+  height: 100vh;
+  background-color: white;
+  color: black;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  border-bottom: solid black 1px;
+}
+.head h1 {
+  font-weight: 400;
+  font-size: 3.8rem;
+  letter-spacing: 6px;
+  text-align: center;
+}
+.head p {
+  font-weight: 400;
+  font-size: 1.5rem;
+  letter-spacing: 2px;
+}
+.location {
+  display: flex;
+  flex-direction: row;
+  height: 120vh;
+  align-items: center;
+  padding: 0 0 0 5rem;
+  background-color: white;
+  justify-content: space-between;
+  color: black;
+}
+.locationDescription {
+  width: 28rem;
+}
+.locationDescription h5 {
+  margin: 0;
+  font-weight: 300;
+  letter-spacing: 1px;
+  font-size: 1rem;
+  border-left: gray solid 2px;
+  line-height: 1.5rem;
+  padding: 0 0 4rem 3rem;
+}
+.locationDescription h1 {
+  margin: 0;
+  font-weight: 300;
+  letter-spacing: 3px;
+  font-size: 1.6rem;
+  border-left: black solid 3px;
+  line-height: 2.5rem;
+  padding-left: 3rem;
+}
+.locationDescription p {
+  margin: 0;
+  font-weight: 300;
+  letter-spacing: 1px;
+  font-size: 1rem;
+  width: fit-content;
+  border-left: gray solid 2px;
+  line-height: 1.8rem;
+  padding: 4rem 0 0 3rem;
+}
+.Jobs {
+  height: max-content;
+  background-color: black;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: center;
+}
+.openings {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  height: max-content;
+  width: 100%;
+  color: white;
+}
+.openingsDescription {
+  width: 28rem;
+  padding-left: 5rem;
+}
+.openingsDescription h5 {
+  margin: 0;
+  font-weight: 300;
+  letter-spacing: 1px;
+  font-size: 1rem;
+  border-left: gray solid 2px;
+  line-height: 1.5rem;
+  padding: 0 0 4rem 3rem;
+}
+.openingsDescription h1 {
+  margin: 0;
+  font-weight: 300;
+  letter-spacing: 3px;
+  font-size: 1.6rem;
+  border-left: white solid 3px;
+  line-height: 2.5rem;
+  padding-left: 3rem;
+}
+.openingsDescription p {
+  margin: 0;
+  font-weight: 300;
+  letter-spacing: 1px;
+  font-size: 1rem;
+  width: fit-content;
+  border-left: gray solid 2px;
+  line-height: 1.8rem;
+  padding: 4rem 0 0 3rem;
+}
+.jobs {
+  display: grid;
+  grid-auto-rows: 18rem;
+  grid-template-columns: auto auto;
+  justify-content: center;
+  row-gap: 20rem;
+  column-gap: 10rem;
+  align-content: space-evenly;
+  padding: 5rem 0;
+  width: fit-content;
+}
+.jobCard {
+  padding: 3rem 2rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  border: solid white 1px;
+  border-radius: 20px;
+  color: white;
+  height: 27rem;
+  width: 23rem;
+}
+.title {
+  font-weight: 400;
+  font-size: 1.1rem;
+  letter-spacing: 2px;
+}
+.jobCard span {
+  color: gray;
+  font-size: 0.9rem;
+  font-weight: 300;
+}
+.jobCard p {
+  line-height: 1.8rem;
+  font-weight: 300;
+}
+.readMoreBtn {
+  background-color: white;
+  color: black;
+  border-left: solid gray 2px;
+  padding-left: 3rem;
+  padding-top: 6rem;
+  display: flex;
+  flex-direction: row;
+}
+.readMoreBtn a {
+  text-decoration: none;
+  color: black;
+  border: 1px black solid;
+  border-radius: 7px 0 0 7px;
+  padding: 0.7rem 1rem;
+  letter-spacing: 2px;
+  transition: 0.5s ease;
+}
+.readMoreBtn a:hover {
+  background-color: black;
+  color: white;
+}
+.readMoreBtn div {
+  border: solid black 1px;
+  border-radius: 0 7px 7px 0;
+  padding: 0.7rem 1rem;
+}
+.readMoreBtn div img {
+  height: 35px;
+  width: 35px;
+}
+.readMoreBtn svg {
+  z-index: 1200;
+  -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
+  fill: var(--fill);
+  fill-opacity: var(--fill-opacity);
+  stroke: var(--stroke);
+  stroke-opacity: var(--stroke-opacity);
+  stroke-width: var(--stroke-width);
+  --stroke-width: 0;
+  --fill-opacity: 1;
+  --stroke: #5e97ff;
+  --stroke-opacity: 1;
+  --fill: #000000;
+}
+.cvSubmit {
+  background-color: white;
+  color: black;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  height: fit-content;
+  border-radius: 20px;
+  width: 20rem;
+  padding: 2rem 3rem;
+}
+.cvSubmit h1 {
+  font-weight: 300;
+  font-size: 1.7rem;
+  margin: 0;
+  line-height: 3rem;
+}
+@media only screen and (max-width: 1024px) {
+}
+@media only screen and (max-width: 720px) {
+  .location {
+    flex-direction: column;
+    height: max-content;
+    align-items: center;
+    padding: 0rem;
+    width: 100%;
+    justify-content: space-around;
+  }
+  .locationDescription {
+    width: 90%;
+    padding: 2rem 0;
+  }
+  .locationDescription h5 {
+    padding: 0 0 2rem 2rem;
+  }
+  .locationDescription h1 {
+    padding-left: 2rem;
+  }
+  .locationDescription p {
+    font-weight: 300;
+    line-height: 2rem;
+    padding: 2rem 0 0 2rem;
+  }
+  .location img {
+    width: max-content;
+    height: max-content;
+  }
+  .jobs {
+    grid-auto-rows: 18rem;
+    grid-template-columns: auto;
+    row-gap: 20rem;
+    column-gap: 0rem;
+  }
+  .openings {
+    flex-direction: column;
+  }
+  .openingsDescription {
+    width: 90%;
+    padding-left: 0;
+    padding: 2rem 0;
+  }
+  .openingsDescription h5 {
+    line-height: 1.5rem;
+    padding: 0 0 2rem 2rem;
+  }
+  .openingsDescription h1 {
+    padding-left: 2rem;
+  }
+  .openingsDescription p {
+    padding: 2rem 0 0 2rem;
+  }
+  .openings img {
+    width: max-content;
+    height: max-content;
+  }
+  .jobCard {
+    height: 27rem;
+    width: 70%;
+    margin-left: 2rem;
+  }
+  .cvSubmit {
+    background-color: white;
+    color: black;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    height: fit-content;
+    border-radius: 20px;
+    width: fit-content;
+    padding: 2rem 3rem;
+  }
+}
