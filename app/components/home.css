@@ -1,81 +1,92 @@
-.vision img{
-    width: 598.8px;
-    height: 540px;
-    z-index: 1200;
+.vision img {
+  width: 598.8px;
+  height: 540px;
+  z-index: 1200;
 }
-.visionPage{
-    height: 100vh;
-    background-color: black;
-    padding: 10rem 0 5rem 0;
+.vision {
+  min-height: 100vh;
+  height: fit-content;
+  background-color: black;
+  padding: 10rem 0 5rem 0;
+  background-color: black;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  align-items: center;
+  position: relative;
 }
-.vision{
-    background-color: black;
-    display: flex;
-    flex-direction: row;
-    justify-content: space-around;
-    align-items: center;
-    position: relative;
+.visionContent {
+  display: flex;
+  flex-direction: column;
+  font-size: larger;
+  width: 30%;
+  padding: 0 5rem;
+  color: white;
+  align-items: start;
+  line-height: 2.5rem;
 }
-.visionContent{
-    display: flex;
-    flex-direction: column;
-    font-size: larger;
-    width: 30%;
-    padding: 0 5rem;
-    color: white;
-    align-items: start;
-    line-height: 2.5rem;
+.visionContent h6 {
+  font-weight: 300;
+  letter-spacing: 3px;
+  padding: 0 0 2rem 3rem;
+  margin: 0;
+  border-left: gray solid 2px;
 }
-.visionContent h6{
-    font-weight: 300;
-    letter-spacing: 3px;
-    padding: 0 0 2rem 3rem;
-    margin: 0;
-    border-left:gray solid 2px;
+.highlighted {
+  border-left: white solid 3px;
+  padding: 0 3rem;
 }
-.highlighted{
-    border-left: white solid 3px;
-    padding: 0 3rem;
+.highlighted h3 {
+  font-weight: 400;
+  letter-spacing: 2px;
+  margin: 0;
 }
-.highlighted h3{
-    font-weight: 400;
-    letter-spacing: 2px;
-    margin: 0;
-}
-.visionContent p{
-    padding: 0 3rem;
-    margin: 0;
-    font-weight: 300;
-    letter-spacing: 1px;
-    font-size: 1rem;
-    border-left:gray solid 2px;
-    line-height: 1.5rem;
-    padding: 4rem 0 0 3rem;
+.visionContent p {
+  padding: 0 3rem;
+  margin: 0;
+  font-weight: 300;
+  letter-spacing: 1px;
+  font-size: 1rem;
+  border-left: gray solid 2px;
+  line-height: 1.5rem;
+  padding: 4rem 0 0 3rem;
 }
 @media only screen and (max-width: 1024px) {
-    .vision img{
-        width: 500px;
-        height: 300px;
-        position: absolute;
-        top: 60vh;
-    }
-    .visionPage{
-        margin-top: 5rem;
-        padding-top: 5rem;
-    }
-    .vision{
-        flex-direction: column;
-        padding: 0 2rem;
-    }
-    .visionContent{
-        width: 100%;
-        font-size: large;
-        padding: 0;
-    }
+  .vision img {
+    width: 500px;
+    height: 300px;
   }
-  @media only screen and (max-width: 720px){
-    .vision img{
-        width: 280px;
-        top: 80vh;
-    }
+  .vision {
+    flex-direction: column;
+    padding: 0 2rem;
+    margin-top: 5rem;
+    padding-top: 5rem;
+    min-height: 200vh;
+    justify-content: space-around;
   }
+  .visionContent {
+    width: 90%;
+    font-size: large;
+    padding: 0;
+  }
+}
+@media only screen and (max-width: 720px) {
+  .vision img {
+    width: fit-content;
+  }
+  .vision {
+    min-height: 80vh;
+    height: fit-content;
+    background-color: black;
+    padding: 5rem 0 2rem 0;
+    flex-direction: column;
+    padding: 0 2rem;
+    justify-content: space-between;
+    height: max-content;
+  }
+}
+@media only screen and (max-width: 400px) {
+  .vision img {
+    width: fit-content;
+  }
+}

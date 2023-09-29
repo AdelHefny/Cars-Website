@@ -1,115 +1,135 @@
-.Members{
-    background-color: white;
-    height: 120vh;
-    z-index: 1000;
-    color: black;
-    display: flex;
+.Members {
+  background-color: white;
+  min-height: 100vh;
+  height: max-content;
+  z-index: 1000;
+  color: black;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
 }
-.membersContainer img{
-    z-index: 1200;
-    height: 760px;
+.membersContainer img {
+  z-index: 1200;
+  height: 336px;
 }
-.membersContainer{
-    display: flex;
-    flex-direction: row;
-    align-items: center;
-    gap: 10rem;
+.imgContainer {
+  height: auto;
 }
-.employees{
+.membersContainer {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  gap: 10rem;
+}
+.employees {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  gap: 3rem;
+  width: auto;
+}
+.count {
+  display: flex;
+  flex-direction: column;
+  gap: 30px;
+  align-items: start;
+  position: relative;
+}
+.count h1,
+.count h5 {
+  margin: 0;
+}
+.count::after {
+  content: "";
+  position: absolute;
+  background-color: black;
+  width: 20px;
+  height: 2px;
+  bottom: 50%;
+  z-index: 15000;
+}
+.count::before {
+  content: "";
+  position: absolute;
+  background-color: gray;
+  width: 100%;
+  height: 1px;
+  bottom: 50%;
+  z-index: 15000;
+}
+.heiglited {
+  font-size: 2.5rem;
+  font-weight: 300;
+  letter-spacing: 2px;
+}
+.count h5 {
+  font-size: large;
+  font-weight: 400;
+}
+.employeesContainer {
+  display: flex;
+  flex-direction: column;
+  align-items: start;
+}
+.title {
+  margin-bottom: 4rem;
+  font-weight: 300;
+  letter-spacing: 2px;
+  font-size: 1.5rem;
+}
+@media only screen and (max-width: 1024px) {
+  .Members {
+    height: 150vh;
+  }
+  .membersContainer {
     display: grid;
-    grid-template-columns: 50% 50%;
-    grid-template-rows: 50% 50%;
+    grid-template-areas:
+      "employeesCount"
+      "roboImage";
     gap: 4rem;
+  }
+  .imgContainer {
+    grid-area: roboImage;
+  }
+  .employeesContainer {
+    grid-area: employeesCount;
+    padding: 0 1rem;
+  }
 }
-.count{
-    display: flex;
-    flex-direction: column;
-    gap: 30px;
-    width: 10rem;
-    align-items: start;
-    position: relative;
-}
-.count h1,.count h5{
-    margin: 0;
-}
-.count::after{
-    content: "";
-    position: absolute;
-    background-color: black;
-    width: 20px;
-    height: 2px;
-    bottom: 50%;
-    z-index: 15000;
-}
-.count::before{
-    content: "";
-    position: absolute;
-    background-color: gray;
-    width: 100%;
-    height: 1px;
-    bottom: 50%;
-    z-index: 15000;
-}
-.heiglited{
-    font-size: 2.5rem;
-    font-weight: 300;
-    letter-spacing: 2px;
-}
-.count h5{
-    font-size: large;
-    font-weight: 400;
-}
-.employeesContainer{
-    display:flex;
-    flex-direction:column;
-    align-items:start;
-}
-.title{
+@media only screen and (max-width: 720px) {
+  .Members {
+    min-height: 120vh;
+  }
+  .membersContainer img {
+    height: 300px;
+    width: 90%;
+  }
+  .title {
     margin-bottom: 4rem;
     font-weight: 300;
     letter-spacing: 2px;
     font-size: 1.5rem;
+  }
+  .count {
+    width: min-content;
+  }
 }
-@media only screen and (max-width: 1024px) {
-    .Members{
-        height: 150vh;
-    }
-    .membersContainer{
-        display: grid;
-        grid-template-areas:
-        "employeesCount"
-        "roboImage";
-        gap: 4rem;
-    }
-    .employees{
-        display: grid;
-        grid-template-columns: 50% 50%;
-        grid-template-rows: 50% 50%;
-        gap: 3rem;
-    }
-    .imgContainer{
-        grid-area: roboImage;
-    }
-    .employeesContainer{
-        grid-area: employeesCount;
-        padding: 0 1rem;
-    }
-}
-@media only screen and (max-width: 720px) {
-    .Members{
-        height: 100vh;
-    }
-    .membersContainer img{
-        height: 300px;
-        width: 381px;
-    }
-    .title{
-        margin-bottom: 4rem;
-        font-weight: 300;
-        letter-spacing: 2px;
-        font-size: 1.5rem;
-    }
-    .count{
-        width: 8rem;
-    }
+@media only screen and (max-width: 400px) {
+  .Members {
+    min-height: 100vh;
+  }
+  .membersContainer img {
+    height: 200px;
+    width: 90%;
+  }
+  .title {
+    margin-bottom: 4rem;
+    font-weight: 300;
+    letter-spacing: 2px;
+    font-size: 1.5rem;
+  }
+  .count {
+    width: 8rem;
+  }
 }

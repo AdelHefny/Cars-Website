@@ -1,6 +1,5 @@
 import Link from "next/link";
 import styles from "../../careers/Careers.module.css";
-import React from "react";
 type buttonProps = {
   children: React.ReactNode;
   CustomStyles: React.CSSProperties;

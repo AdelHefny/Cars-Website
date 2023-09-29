@@ -78,10 +78,14 @@
   }
   .features {
     gap: 1rem;
+    grid-auto-rows: 6rem;
+    grid-auto-columns: 10rem;
+    grid-template-rows: none;
+    width: fit-content;
   }
   .serviceCard {
-    height: 13rem;
-    width: 12rem;
+    height: 10rem;
+    width: 5rem;
   }
   .serviceCard img {
     width: 50px;
@@ -94,5 +98,13 @@
     width: fit-content;
     padding-left: 0 1rem;
     line-height: 1.9rem;
+  }
+}
+@media only screen and (max-width: 720px) {
+  .serviceCard {
+    width: 50%;
+  }
+  .features {
+    gap: 1rem;
   }
 }

@@ -4,7 +4,6 @@ import highWay from "@/public/images/Careers/highWay.jpg";
 import { jobs } from "@/app/components/careers/data";
 import JobCard from "./jobCard";
 import Button from "./button";
-import React from "react";
 
 function Jobs() {
   return (

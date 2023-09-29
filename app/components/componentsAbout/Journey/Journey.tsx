@@ -4,7 +4,6 @@ import Card from "./Card";
 import styles from "./Journey.module.css";
 import { data } from "./data.js";
 import { useRef, useState } from "react";
-import React from "react";
 
 function Journey() {
   const [group, setGroup] = useState(0);

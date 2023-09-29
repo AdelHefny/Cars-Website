@@ -6,19 +6,17 @@ import roboHandSm from "@/public/images/RoboHand/Robot-Hand-sm.jpg";
 import { useState, useEffect } from "react";
 import React from "react";
 function RoboImage() {
-  const [windowWidth, setWindowWidth] = useState(
-    typeof window !== "undefined" ? window.innerWidth : 0
-  );
+  const [windowWidth, setWindowWidth] = useState(750);
   useEffect(() => {
-    window.addEventListener("resize", () => {
+    window.addEventListener("scroll", () => {
       setWindowWidth(window.innerWidth);
     });
     return () => {
-      window.removeEventListener("resize", () => {
+      window.removeEventListener("scroll", () => {
         setWindowWidth(window.innerWidth);
       });
     };
-  });
+  }, []);
   return (
     <div className={styles.imgContainer}>
       <Image

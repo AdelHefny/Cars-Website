@@ -1,7 +1,6 @@
 import Image from "next/image";
 import styles from "../../careers/Careers.module.css";
 import buildings from "@/public/images/Careers/buildings.jpg";
-import React from "react";
 
 function Location() {
   return (

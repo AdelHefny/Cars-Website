@@ -1,5 +1,4 @@
 import styles from "./Careers.module.css";
-import React from "react";
 type JobsBtnProps = {
   val: number;
   current: number;
