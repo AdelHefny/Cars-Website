@@ -3,7 +3,7 @@
 import React from "react";
 import Link from "next/link";
 import "./header.css";
-import { MutableRefObject, useEffect, useState, useRef, Suspense } from "react";
+import { MutableRefObject, useEffect, useRef, Suspense } from "react";
 
 function Nav() {
   const nav = useRef() as MutableRefObject<HTMLDivElement>;
@@ -53,7 +53,7 @@ function Nav() {
     return () => {
       window.removeEventListener("scroll", onScroll);
     };
-  }, [window.scrollY]);
+  });
   return (
     <Suspense fallback={<h1>loading</h1>}>
       <nav className="nav" ref={nav}>
