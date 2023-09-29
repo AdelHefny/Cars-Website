@@ -1,7 +1,6 @@
 "use client";
 
 import styles from "./Journey.module.css";
-import { useEffect, useState } from "react";
 import React from "react";
 type CardProps = {
   cardInfo: {
@@ -15,17 +14,6 @@ type CardProps = {
 };
 
 function Card({ cardInfo }: CardProps) {
-  const [windowWidth, setWindowWidth] = useState(1000);
-  useEffect(() => {
-    window.addEventListener("resize", () => {
-      setWindowWidth(window.innerWidth);
-    });
-    return () => {
-      window.removeEventListener("resize", () => {
-        setWindowWidth(window.innerWidth);
-      });
-    };
-  });
   let CardPostion = "";
   if (cardInfo.top == true && cardInfo.left == true) {
     CardPostion = "topLeft";
@@ -40,7 +28,7 @@ function Card({ cardInfo }: CardProps) {
     <section
       className={`${styles.Card}`}
       style={
-        windowWidth > 720
+        window.innerWidth > 720
           ? {
               gridArea: `${CardPostion}`,
               right: `${cardInfo.left == true ? "-25%" : "25%"}`,

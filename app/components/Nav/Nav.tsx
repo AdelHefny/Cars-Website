@@ -6,57 +6,48 @@ import "./header.css";
 import { MutableRefObject, useEffect, useState, useRef, Suspense } from "react";
 
 function Nav() {
-  const [windowWidth, setWindowWidth] = useState(0);
-  useEffect(() => {
-    window.addEventListener("resize", () => {
-      setWindowWidth(window.innerWidth);
-    });
-    return () => {
-      window.removeEventListener("resize", () => {
-        setWindowWidth(window.innerWidth);
-      });
-    };
-  });
   const nav = useRef() as MutableRefObject<HTMLDivElement>;
   const hamburger = useRef() as MutableRefObject<HTMLButtonElement>;
   let lastMove = 0;
   let change = 0;
   function onScroll() {
-    if (typeof window === "object") {
-      if (window.innerWidth < 720) {
-      } else if (window.scrollY > 0) {
-        nav.current.style.backgroundColor = "white";
-      } else {
-        nav.current.style.backgroundColor = "transparent";
-      }
-      if (
-        window.scrollY > lastMove &&
-        nav.current.style.transform == "translate(0px, -100%)"
-      ) {
-        change = 0;
-      } else if (
-        window.scrollY < lastMove &&
-        nav.current.style.transform == "translate(0px, 0px)"
-      ) {
-        change = 0;
-      } else if (window.scrollY > lastMove) {
-        change += window.scrollY - lastMove;
-        if (change >= 400) {
-          nav.current.style.transform = "translate(0,-100%)";
-          change = 0;
+    if (typeof window !== "undefined") {
+      if (typeof window === "object") {
+        if (window.innerWidth < 720) {
+        } else if (window.scrollY > 0) {
+          nav.current.style.backgroundColor = "white";
+        } else {
+          nav.current.style.backgroundColor = "transparent";
         }
-      } else if (window.scrollY < lastMove) {
-        change += window.scrollY - lastMove;
-        if (change <= -200) {
-          nav.current.style.transform = "translate(0,0)";
+        if (
+          window.scrollY > lastMove &&
+          nav.current.style.transform == "translate(0px, -100%)"
+        ) {
           change = 0;
+        } else if (
+          window.scrollY < lastMove &&
+          nav.current.style.transform == "translate(0px, 0px)"
+        ) {
+          change = 0;
+        } else if (window.scrollY > lastMove) {
+          change += window.scrollY - lastMove;
+          if (change >= 400) {
+            nav.current.style.transform = "translate(0,-100%)";
+            change = 0;
+          }
+        } else if (window.scrollY < lastMove) {
+          change += window.scrollY - lastMove;
+          if (change <= -200) {
+            nav.current.style.transform = "translate(0,0)";
+            change = 0;
+          }
         }
+        lastMove = window.scrollY;
       }
-      lastMove = window.scrollY;
     }
   }
   useEffect(() => {
-    if (typeof window === "object") {
+    if (typeof window !== "undefined") {
       window.addEventListener("scroll", onScroll);
     }
     return () => {

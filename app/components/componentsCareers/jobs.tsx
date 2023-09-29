@@ -3,7 +3,6 @@ import styles from "../../careers/Careers.module.css";
 import highWay from "@/public/images/Careers/highWay.jpg";
 import { jobs } from "@/app/components/careers/data";
 import JobCard from "./jobCard";
-import ApplyButton from "@/app/components/careers/Button";
 import Button from "./button";
 import React from "react";
 
