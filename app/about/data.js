@@ -1,9 +1,3 @@
-import BCR from "../../public/images/About/newsPlatforms/BCR.jpg";
-import Binance from "../../public/images/About/newsPlatforms/Binance.jpg";
-import BReview from "../../public/images/About/newsPlatforms/BReview.jpg";
-import londonPost from "../../public/images/About/newsPlatforms/londonPost.jpg";
-import PaloAlto from "../../public/images/About/newsPlatforms/paloAlto.jpg";
-
 const newsPlatforms = [
   {
     Id: 0,

@@ -5,6 +5,7 @@ import { jobs } from "@/app/components/careers/data";
 import JobCard from "./jobCard";
 import ApplyButton from "@/app/components/careers/Button";
 import Button from "./button";
+import React from "react";
 
 function Jobs() {
   return (

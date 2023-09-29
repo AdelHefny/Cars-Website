@@ -1,6 +1,6 @@
 import Image from "next/image";
 import styles from "./Industry.module.css";
-
+import React from "react";
 type serviceCardProps = {
   card: {
     id: number;

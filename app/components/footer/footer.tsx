@@ -3,7 +3,7 @@ import { data } from "./data.js";
 import Image from "next/image";
 import Link from "next/link";
 import SubButton from "./SubButton";
-
+import React from "react";
 function Footer() {
   return (
     <section className={styles.footer}>

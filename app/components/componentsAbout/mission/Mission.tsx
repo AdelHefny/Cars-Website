@@ -1,7 +1,7 @@
 import Image from "next/image";
 import styles from "./Mission.module.css";
 import worker from "@/public/images/About/worker.jpg";
-
+import React from "react";
 function Mission() {
   return (
     <section className={styles.Mission}>

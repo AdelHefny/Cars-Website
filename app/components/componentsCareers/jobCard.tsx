@@ -1,5 +1,6 @@
 import ApplyButton from "@/app/components/careers/Button";
 import styles from "../../careers/Careers.module.css";
+import React from "react";
 type jobCardProps = {
   cardData: {
     id: number;

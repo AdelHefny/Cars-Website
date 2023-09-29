@@ -3,6 +3,7 @@ import Mission from "../components/componentsAbout/mission/Mission";
 import Journey from "../components/componentsAbout/Journey/Journey";
 import newsPlatform from "./data";
 import Image from "next/image";
+import React from "react";
 function About() {
   return (
     <section className={styles.aboutPage}>

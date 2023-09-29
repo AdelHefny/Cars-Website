@@ -5,17 +5,17 @@ import Members from "./components/members/Members";
 import Service from "./components/services";
 import Slogan from "./components/slogan";
 import Vision from "./components/vision";
-
+import React from "react";
 export default function Home() {
   return (
     <main className="homePage">
-      <Slogan/>
-      <Vision/>
-      <Service/>
-      <BlogDirector/>
-      <Members/>
-      <Industry/>
-      <Careers/>
+      <Slogan />
+      <Vision />
+      <Service />
+      <BlogDirector />
+      <Members />
+      <Industry />
+      <Careers />
     </main>
-  )
+  );
 }

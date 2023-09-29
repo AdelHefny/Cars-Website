@@ -1,6 +1,7 @@
 import styles from "./Careers.module.css";
 import Jobs from "../components/componentsCareers/jobs";
 import Location from "../components/componentsCareers/location";
+import React from "react";
 
 function Careers() {
   return (

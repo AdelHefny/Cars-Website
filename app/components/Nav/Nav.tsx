@@ -1,5 +1,6 @@
 "use client";
 
+import React from "react";
 import Link from "next/link";
 import "./header.css";
 import { MutableRefObject, useEffect, useState, useRef, Suspense } from "react";

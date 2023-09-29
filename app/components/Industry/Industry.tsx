@@ -1,7 +1,7 @@
 import styles from "./Industry.module.css";
 import { data } from "./data.js";
 import ServiceCard from "./serviceCard";
-
+import React from "react";
 function Industry() {
   return (
     <section className={styles.Industry}>

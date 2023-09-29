@@ -3,7 +3,7 @@ import AutonoCar from "../components/componentsTech/AutonoCar/AutonoCar";
 import Products from "../components/componentsTech/products/Products";
 import styles from "./tech.module.css";
 import headImg from "@/public/images/technology/headImg.jpg";
-
+import React from "react";
 function Technology() {
   return (
     <section>

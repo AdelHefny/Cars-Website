@@ -2,6 +2,7 @@
 
 import styles from "./Journey.module.css";
 import { useEffect, useState } from "react";
+import React from "react";
 type CardProps = {
   cardInfo: {
     Id: number;
