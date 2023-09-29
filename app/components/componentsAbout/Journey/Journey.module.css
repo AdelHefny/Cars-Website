@@ -1,129 +1,141 @@
-.Journey{
-    height: 130vh;
-    position: relative;
-    display: flex;
-    flex-direction: column;
-    background-color: white;
-    color: black;
-    align-items: center;
+.Journey {
+  height: 130vh;
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  background-color: white;
+  color: black;
+  align-items: center;
 }
-.JourneyTitle{
-    font-weight: 300;
-    font-size: 1.8rem;
-    text-align: start;
-    width: 80%;
-    padding: 3rem 0 ;
+.JourneyTitle {
+  font-weight: 300;
+  font-size: 1.8rem;
+  text-align: start;
+  width: 80%;
+  padding: 3rem 0;
 }
-.journeyCards{
-    width: 90%;
-    position: relative;
-    display: grid;
-    grid-template-areas: "topLeft topRight"
+.journeyCards {
+  width: 90%;
+  position: relative;
+  display: grid;
+  grid-template-areas:
+    "topLeft topRight"
     "bottomLeft bottomRight";
-    height: 39rem;
-    align-items: center;
-    transition: 0.5s ease-in;
+  height: 39rem;
+  align-items: center;
+  transition: 0.5s ease-in;
 }
-.journeyCards::before{
-    content: "";
-    background-color: gray;
-    position: absolute;
-    top: 50%;
-    height: 1px;
-    width: 100%;
+.journeyCards::before {
+  content: "";
+  background-color: gray;
+  position: absolute;
+  top: 50%;
+  height: 1px;
+  width: 100%;
 }
-.Card{
-    display: flex;
-    position: relative;
-    width: 30rem;
-    flex-direction: column;
-    justify-content: space-around;
-    border: solid black 1px;
-    border-radius: 14px;
-    padding: 0 2rem;
-    height: 15rem;
+.Card {
+  display: flex;
+  position: relative;
+  width: 30rem;
+  flex-direction: column;
+  justify-content: space-around;
+  border: solid black 1px;
+  border-radius: 14px;
+  padding: 0 2rem;
+  height: 15rem;
 }
-.Card p{
-    margin: 0;
-    font-weight: 300;
+.Card p {
+  margin: 0;
+  font-weight: 300;
 }
-.cardTitle{
-    color: rgb(250, 121, 0);
-    border-bottom: solid gray 1px;
-    font-size: 2.3rem;
-    font-weight: 400;
-    letter-spacing: 2px;
-    width: 6rem;
-    margin: 0;
-    padding-bottom: 1rem;
+.cardTitle {
+  color: rgb(250, 121, 0);
+  border-bottom: solid gray 1px;
+  font-size: 2.3rem;
+  font-weight: 400;
+  letter-spacing: 2px;
+  width: 6rem;
+  margin: 0;
+  padding-bottom: 1rem;
 }
-.btn{
-    position: absolute;
-    outline: none;
-    border: none;
-    cursor: pointer;
-    background-color: white;
-    transition: 0.5s;
+.btn {
+  position: absolute;
+  outline: none;
+  border: none;
+  cursor: pointer;
+  background-color: white;
+  transition: 0.5s;
 }
-.btn:hover{
-    opacity: 0.7;
+.btn:hover {
+  opacity: 0.7;
 }
-.left{
-    left: 0;
+.left {
+  left: 0;
 }
-.left::before{
-    content: "";
-    position: absolute;
-    background-color: black;
-    height: 3px;
-    width: 20px;
-    left: 20rem;
-    top: 50%;
-    border-radius: 7px;
+.left::before {
+  content: "";
+  position: absolute;
+  background-color: black;
+  height: 3px;
+  width: 20px;
+  left: 20rem;
+  top: 50%;
+  border-radius: 7px;
 }
-.right::before{
-    content: "";
-    position: absolute;
-    background-color: black;
-    height: 3px;
-    top: 50%;
-    right: 20rem;
-    width: 20px;
-    border-radius: 7px;
+.right::before {
+  content: "";
+  position: absolute;
+  background-color: black;
+  height: 3px;
+  top: 50%;
+  right: 20rem;
+  width: 20px;
+  border-radius: 7px;
 }
-.right{
-    right: 0;
+.right {
+  right: 0;
+}
+.topLeft {
+  grid-area: topLeft;
+}
+.topRight {
+  grid-area: topRight;
+}
+.bottomLeft {
+  grid-area: bottomLeft;
+}
+.bottomRight {
+  grid-area: bottomRight;
 }
 @media only screen and (max-width: 1024px) {
-
 }
 @media only screen and (max-width: 720px) {
-    .Journey{
-        height: 100vh;
-    }
-    .journeyCards{
-        grid-template-rows: auto auto;
-        grid-template-columns: auto;
-        grid-template-areas: none;
-    }
-    .Card{
-        width: 18rem;
-    }
-    .left::before{
-        left: 2.5rem;
-        top: 50%;
-        width: 30px;
-        border-radius: 7px;
-    }
-    .right::before{
-        top: 50%;
-        right: 2.5rem;
-        width: 30px;
-        border-radius: 7px;
-    }
-    .JourneyTitle{
-        text-align: center;
-        width: 100%;
-        padding: 2rem 0 ;
-    }
+  .Journey {
+    height: 100vh;
+  }
+  .journeyCards {
+    grid-template-rows: auto auto;
+    grid-template-columns: auto;
+    grid-template-areas: none;
+  }
+  .Card {
+    width: 18rem;
+  }
+  .left::before {
+    left: 2.5rem;
+    top: 50%;
+    width: 30px;
+    border-radius: 7px;
+  }
+  .right::before {
+    top: 50%;
+    right: 2.5rem;
+    width: 30px;
+    border-radius: 7px;
+  }
+  .JourneyTitle {
+    text-align: center;
+    width: 100%;
+    padding: 2rem 0;
+  }
 }

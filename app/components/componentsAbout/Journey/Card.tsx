@@ -25,17 +25,7 @@ function Card({ cardInfo }: CardProps) {
     CardPostion = "bottomRight";
   }
   return (
-    <section
-      className={`${styles.Card}`}
-      style={
-        window.innerWidth > 720
-          ? {
-              gridArea: `${CardPostion}`,
-              right: `${cardInfo.left == true ? "-25%" : "25%"}`,
-            }
-          : {}
-      }
-    >
+    <section className={`${styles.Card} ${CardPostion}`}>
       <h1 className={styles.cardTitle}>{cardInfo.year}</h1>
       <p>{cardInfo.event}</p>
       <p>{cardInfo.decreption}</p>
