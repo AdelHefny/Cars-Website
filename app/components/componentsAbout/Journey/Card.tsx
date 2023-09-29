@@ -14,7 +14,7 @@ type CardProps = {
 };
 
 function Card({ cardInfo }: CardProps) {
-  const [windowWidth, setWindowWidth] = useState(0);
+  const [windowWidth, setWindowWidth] = useState(1000);
   useEffect(() => {
     window.addEventListener("resize", () => {
       setWindowWidth(window.innerWidth);

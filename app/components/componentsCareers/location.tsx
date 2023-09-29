@@ -1,5 +1,5 @@
 import Image from "next/image";
-import styles from "../Careers.module.css";
+import styles from "../../careers/Careers.module.css";
 import buildings from "@/public/images/Careers/buildings.jpg";
 
 function Location() {

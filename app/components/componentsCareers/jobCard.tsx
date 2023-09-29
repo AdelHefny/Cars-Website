@@ -1,5 +1,5 @@
 import ApplyButton from "@/app/components/careers/Button";
-import styles from "../Careers.module.css";
+import styles from "../../careers/Careers.module.css";
 type jobCardProps = {
   cardData: {
     id: number;

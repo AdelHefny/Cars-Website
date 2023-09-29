@@ -1,5 +1,5 @@
 import Image from "next/image";
-import styles from "../Careers.module.css";
+import styles from "../../careers/Careers.module.css";
 import highWay from "@/public/images/Careers/highWay.jpg";
 import { jobs } from "@/app/components/careers/data";
 import JobCard from "./jobCard";

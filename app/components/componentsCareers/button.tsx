@@ -1,5 +1,5 @@
 import Link from "next/link";
-import styles from "../Careers.module.css";
+import styles from "../../careers/Careers.module.css";
 
 type buttonProps = {
   children: React.ReactNode;

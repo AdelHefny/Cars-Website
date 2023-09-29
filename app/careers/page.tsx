@@ -1,6 +1,6 @@
 import styles from "./Careers.module.css";
-import Jobs from "./components/jobs";
-import Location from "./components/location";
+import Jobs from "../components/componentsCareers/jobs";
+import Location from "../components/componentsCareers/location";
 
 function Careers() {
   return (
