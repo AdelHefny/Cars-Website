@@ -1,3 +1,5 @@
+"use client";
+
 import styles from "./Journey.module.css";
 import { useEffect, useState } from "react";
 type CardProps = {
@@ -12,7 +14,7 @@ type CardProps = {
 };
 
 function Card({ cardInfo }: CardProps) {
-  const [windowWidth, setWindowWidth] = useState(window.innerWidth);
+  const [windowWidth, setWindowWidth] = useState(0);
   useEffect(() => {
     window.addEventListener("resize", () => {
       setWindowWidth(window.innerWidth);
