@@ -1,10 +1,8 @@
-import { relative } from "path";
 import styles from "./About.module.css";
 import Mission from "./components/mission/Mission";
 import Journey from "./components/Journey/Journey";
 import newsPlatform from "./data";
 import Image from "next/image";
-
 function About() {
   return (
     <section className={styles.aboutPage}>
@@ -28,11 +26,11 @@ function About() {
         <section className={styles.newsPlatform}>
           {newsPlatform.map((ele) => (
             <Image
-              src={ele.Image}
+              src={`/images/About/newsPlatforms/${ele.Image}.jpg`}
               key={ele.Id}
               width={ele.width}
               height={ele.height}
-              alt="news Platform"
+              alt={`news Platform ${ele.Image}`}
             />
           ))}
         </section>
