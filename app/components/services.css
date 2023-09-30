@@ -129,9 +129,25 @@
   .services {
     align-items: center;
   }
+  .auto {
+    padding-left: 5rem;
+  }
   .auto img {
-    height: 580px;
-    width: 420px;
+    height: 500px;
+    width: 400px;
+  }
+  .RealTime {
+    gap: 3rem;
+    min-height: 0;
+  }
+  .RealTime img {
+    width: 400px;
+    height: 380px;
+  }
+  .perception img {
+    z-index: 1000;
+    height: 420px;
+    width: 400px;
   }
 }
 @media only screen and (max-width: 720px) {
@@ -168,7 +184,6 @@
     flex-direction: column;
     align-items: center;
     justify-content: center;
-
     gap: 3rem;
   }
   .RealTime img {

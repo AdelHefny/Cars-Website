@@ -23,7 +23,7 @@ function Careers() {
           Openings
         </ApplyButton>
       </section>
-      <section>
+      <section className={styles.jobContainer}>
         <Jobs />
       </section>
     </section>

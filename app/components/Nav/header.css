@@ -90,10 +90,10 @@
 .burgerBtn.active + .burger {
   display: block;
 }
-.burgerBtn.active + .burger::after {
+.burgerBtn.active .burger::after {
   transform: rotate(-45deg);
 }
-.burgerBtn.active + .burger::before {
+.burgerBtn.active .burger::before {
   transform: rotate(45deg);
   bottom: 60%;
 }
@@ -148,6 +148,9 @@
   .burgerBtn {
     display: block;
     width: 3rem;
+  }
+  .burger {
+    display: block;
   }
   .nav ul {
     display: none;

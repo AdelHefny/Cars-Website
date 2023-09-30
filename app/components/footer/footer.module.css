@@ -154,7 +154,7 @@
   .contactInfo {
     justify-content: flex-start;
     gap: 2rem;
-    width: 11rem;
+    width: 65%;
   }
   .contactInfo p {
     padding-bottom: 0rem;
@@ -170,5 +170,11 @@
     align-items: center;
     justify-content: center;
     gap: 10px;
+  }
+  .Subscribe {
+    letter-spacing: 2px;
+  }
+  .subBtn {
+    right: 0;
   }
 }

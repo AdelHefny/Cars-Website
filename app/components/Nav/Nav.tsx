@@ -75,8 +75,10 @@ function Nav() {
         onClick={() => {
           hamburger.current.classList.toggle("active");
         }}
-      ></button>
-      <div className="burger"></div>
+      >
+        <span className="burger"></span>
+      </button>
+
       <div className="mobNav">
         <ul className="nav-list-mob">
           <li>
